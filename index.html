@@ -1,76 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Daizee Beauty</title>
-<style>
-body{
-font-family: Arial;
-margin:0;
-background:#fffaf7;
-text-align:center;
-}
-header{
-background:#f7e7e1;
-padding:40px;
-}
-h1{
-font-size:40px;
-color:#333;
-}
-.tagline{
-font-size:18px;
-color:#666;
-}
-.section{
-padding:60px 20px;
-}
-.product{
-display:inline-block;
-width:250px;
-margin:20px;
-padding:20px;
-border-radius:10px;
-background:white;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
-}
-footer{
-background:#333;
-color:white;
-padding:20px;
-}
-</style>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daizee Beauty</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffdf9;
+      color: #2f2a26;
+      text-align: center;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom, #f8eee8, #fffdf9);
+      padding: 90px 20px 70px;
+    }
+
+    .brand {
+      font-size: 56px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .tagline {
+      font-size: 22px;
+      color: #6d625b;
+      margin-bottom: 28px;
+    }
+
+    .hero-text {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 17px;
+      line-height: 1.7;
+      color: #5f5550;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #2f2a26;
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 34px;
+      margin-bottom: 14px;
+    }
+
+    .section-subtext {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #6f655f;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+    }
+
+    .product {
+      background: white;
+      width: 280px;
+      padding: 28px 22px;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+
+    .product h3 {
+      margin-top: 0;
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .product p {
+      color: #6c635d;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .ingredients {
+      background: #f9f3ee;
+      border-radius: 24px;
+      padding: 45px 25px;
+    }
+
+    .ingredient-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 25px;
+    }
+
+    .ingredient {
+      background: white;
+      padding: 12px 18px;
+      border-radius: 999px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      font-size: 14px;
+    }
+
+    footer {
+      background: #1f1b18;
+      color: white;
+      padding: 28px 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .brand {
+        font-size: 42px;
+      }
+
+      .tagline {
+        font-size: 18px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
 <body>
 
-<header>
-<h1>Daizee Beauty</h1>
-<p class="tagline">Where Glow Begins</p>
-</header>
+  <section class="hero">
+    <div class="brand">Daizee Beauty</div>
+    <div class="tagline">Where Glow Begins</div>
+    <p class="hero-text">
+      Gentle skincare inspired by glow, comfort, and simple ingredients.
+      Discover beautiful everyday bars made to cleanse, nourish, and leave skin feeling fresh and soft.
+    </p>
+    <a href="#shop" class="button">Shop Glow Soaps</a>
+  </section>
 
-<div class="section">
-<h2>Natural Glow Soaps</h2>
+  <section class="section" id="shop">
+    <h2>Featured Bars</h2>
+    <p class="section-subtext">
+      A soft, clean collection designed for brightening, calming, and everyday skin comfort.
+    </p>
 
-<div class="product">
-<h3>Turmeric Glow Bar</h3>
-<p>Brightening soap with turmeric and rice powder.</p>
-</div>
+    <div class="products">
+      <div class="product">
+        <h3>Turmeric Glow Bar</h3>
+        <p>Brightening-inspired bar with a warm, golden glow feel for your daily skincare ritual.</p>
+      </div>
 
-<div class="product">
-<h3>Gentle Oat Bar</h3>
-<p>Perfect for sensitive and eczema-prone skin.</p>
-</div>
+      <div class="product">
+        <h3>Gentle Oat Bar</h3>
+        <p>A soft and comforting bar made for a calm, simple cleanse and a skin-friendly feel.</p>
+      </div>
 
-</div>
+      <div class="product">
+        <h3>Milk Radiance Bar</h3>
+        <p>A creamy, smooth bar created to leave skin feeling pampered, fresh, and softly nourished.</p>
+      </div>
+    </div>
+  </section>
 
-<div class="section">
-<h2>About Daizee Beauty</h2>
-<p>Daizee Beauty creates natural skincare and glow soaps designed for healthy radiant skin.</p>
-</div>
+  <section class="section">
+    <div class="ingredients">
+      <h2>Inspired by Simple Ingredients</h2>
+      <p class="section-subtext">
+        Daizee Beauty is built around soft beauty, clean presentation, and ingredients people already love in glow-focused skincare.
+      </p>
 
-<footer>
-<p>© 2026 Daizee Beauty</p>
-</footer>
+      <div class="ingredient-list">
+        <div class="ingredient">Turmeric</div>
+        <div class="ingredient">Oat</div>
+        <div class="ingredient">Milk</div>
+        <div class="ingredient">Honey</div>
+        <div class="ingredient">Rice</div>
+        <div class="ingredient">Botanical Oils</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>About Daizee Beauty</h2>
+    <p class="section-subtext">
+      Daizee Beauty is a beauty brand centered on soft glow, gentle care, and simple presentation.
+      Created with a clean, feminine feel, the brand is designed to make skincare feel pretty, calming, and easy to love.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Daizee Beauty. All rights reserved.
+  </footer>
 
 </body>
 </html>
